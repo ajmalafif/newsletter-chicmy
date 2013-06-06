@@ -1,6 +1,6 @@
 Betakit::Application.routes.draw do
 
-  root :to => redirect('/client/clientTestPage.html')
+  match '/' => "pages#index"
 
   match '/admin' => 'admin#home'
   match '/dashboard' => 'admin#reports'
