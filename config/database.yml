@@ -3,7 +3,7 @@ development:
   encoding: utf8
   database: betakit_development
   pool: 5
-  username: scosman 
+  username: ajmalafif 
   password:
   timeout: 5000
 
@@ -15,7 +15,7 @@ test:
   encoding: unicode
   database: betakit_test
   pool: 5
-  username: scosman
+  username: ajmalafif
   password:
 
 production:
