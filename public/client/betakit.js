@@ -32,12 +32,12 @@ Betakit.getReferralCode = function()
 // TODO P1 - Move this to a JST
 Betakit.getShareHtml = function(shareLink)
 {
-  var shareSection = "<div class='betakitShareTitle'>Thank you!</div>";
-  shareSection += "<div class='betakitShareSubtitle'>We'll send you an invite soon.</div>";
+  var shareSection = "<div class='betakitShareTitle'>Thanks for signing up!</div>";
+  shareSection += "<div class='betakitShareSubtitle'>See you at the Bazaar!</div>";
   shareSection += "<div class='betakitShareSection'>Share</div>";
   
   // HTML for the share section (AddThis.com's sharing widget)
-  shareSection += '<script type="text/javascript">\n  var addthis_share ={};\n  var Betakit = Betakit || {};\n  addthis_share.url = "' + shareLink + '";\n  if (Betakit.shareTitle != undefined) addthis_share.title = Betakit.shareTitle;\n  if (Betakit.shareDescripton != undefined) addthis_share.description = Betakit.shareDescripton;\n  if (Betakit.shareTwitterTemplate != undefined) \n  {\n    addthis_share.templates = {}; \n    addthis_share.templates.twitter = Betakit.shareTwitterTemplate;\n  }\n</script>\n\n<!-- AddThis BEGIN -->\n<div id="shareButtonGroup" class="addthis_toolbox addthis_default_style addthis_32x32_style">\n<a class="addthis_button_twitter"></a>\n<a class="addthis_button_facebook"></a>\n<a class="addthis_button_linkedin"></a>\n<a class="addthis_button_google_plusone"></a>\n<a class="addthis_button_email"></a>\n<a class="addthis_button_compact"></a>\n</div>\n';
+  shareSection += '<script type="text/javascript">\n  var addthis_share ={};\n  var Betakit = Betakit || {};\n  addthis_share.url = "' + shareLink + '";\n  if (Betakit.shareTitle != undefined) addthis_share.title = Betakit.shareTitle;\n  if (Betakit.shareDescripton != undefined) addthis_share.description = Betakit.shareDescripton;\n  if (Betakit.shareTwitterTemplate != undefined) \n  {\n    addthis_share.templates = {}; \n    addthis_share.templates.twitter = Betakit.shareTwitterTemplate;\n  }\n</script>\n\n<!-- AddThis BEGIN -->\n<div id="shareButtonGroup" class="addthis_toolbox addthis_default_style addthis_32x32_style">\n<a class="addthis_button_twitter"></a>\n<a class="addthis_button_facebook"></a>\n</div>\n';
   
   // HTML for the Follow section, ensure at least 1 is set
   if (Betakit.facebookName || Betakit.twitterUser || Betakit.rssLink)
