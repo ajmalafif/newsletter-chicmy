@@ -11,6 +11,8 @@ gem 'thin'
 # in production environments by default.
 group :assets do
   gem 'less-rails'
+  # Add Foundation Here
+  gem 'zurb-foundation', '~> 4.0.0'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
