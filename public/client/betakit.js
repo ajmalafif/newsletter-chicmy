@@ -32,12 +32,12 @@ Betakit.getReferralCode = function()
 // TODO P1 - Move this to a JST
 Betakit.getShareHtml = function(shareLink)
 {
-  var shareSection = "<div class='betakitShareTitle'>Thanks for signing up!</div>";
-  shareSection += "<div class='betakitShareSubtitle'>See you at the Bazaar!</div>";
+  var shareSection = "<div class='betakitShareTitle'>Thanks! See you at the Bazaar!</div>";
+  shareSection += "";
   shareSection += "<div class='betakitShareSection'>Share</div>";
   
   // HTML for the share section (AddThis.com's sharing widget)
-  shareSection += '<script type="text/javascript">\n  var addthis_share ={};\n  var Betakit = Betakit || {};\n  addthis_share.url = "' + shareLink + '";\n  if (Betakit.shareTitle != undefined) addthis_share.title = Betakit.shareTitle;\n  if (Betakit.shareDescripton != undefined) addthis_share.description = Betakit.shareDescripton;\n  if (Betakit.shareTwitterTemplate != undefined) \n  {\n    addthis_share.templates = {}; \n    addthis_share.templates.twitter = Betakit.shareTwitterTemplate;\n  }\n</script>\n\n<!-- AddThis BEGIN -->\n<div id="shareButtonGroup" class="addthis_toolbox addthis_default_style addthis_32x32_style">\n<a class="addthis_button_twitter"></a>\n<a class="addthis_button_facebook"></a>\n</div>\n';
+  shareSection += '<script type="text/javascript">\n  var addthis_share ={};\n  var Betakit = Betakit || {};\n  addthis_share.url = "' + shareLink + '";\n  if (Betakit.shareTitle != undefined) addthis_share.title = Betakit.shareTitle;\n  if (Betakit.shareDescripton != undefined) addthis_share.description = Betakit.shareDescripton;\n  if (Betakit.shareTwitterTemplate != undefined) \n  {\n    addthis_share.templates = {}; \n    addthis_share.templates.twitter = Betakit.shareTwitterTemplate;\n  }\n</script>\n\n<!-- AddThis BEGIN -->\n<div id="shareButtonGroup" class="addthis_toolbox addthis_default_style addthis_32x32_style">\n<a class="addthis_button_twitter"><img src="../assets/twitter.png" border="0" alt="Share to Twitter" /></a>\n<a class="addthis_button_facebook"><img src="../assets/facebook.png" border="0" alt="Share to Facebook" /></a>\n</div>\n';
   
   // HTML for the Follow section, ensure at least 1 is set
   if (Betakit.facebookName || Betakit.twitterUser || Betakit.rssLink)
