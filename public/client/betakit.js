@@ -148,12 +148,19 @@ Betakit.signUp = function()
   });
 
   $.ajax({
-    type: "POST",
+    type: 'POST',
     url:"http://newsletter.chic.my/subscribe",
-    dataType: "jsonp",
     data: {email: email,
            list: 'PtCA7hgiZuZucMCQGFLrcA'},
-  });
+         });
+
+  // $.ajax({
+  //   type: "POST",
+  //   url:"http://newsletter.chic.my/subscribe",
+  //   dataType: "jsonp",
+  //   data: {email: email,
+  //          list: 'PtCA7hgiZuZucMCQGFLrcA'},
+  // });
 };
 
 $(document).ready(function() {
