@@ -146,6 +146,14 @@ Betakit.signUp = function()
         $('#betakitButton').attr("disabled", false);
       },
   });
+
+  $.ajax({
+    type: "POST",
+    url:"http://newsletter.chic.my/subscribe",
+    dataType: "jsonp",
+    data: {email: email,
+           list: 'PtCA7hgiZuZucMCQGFLrcA'},
+  });
 };
 
 $(document).ready(function() {
